@@ -1,0 +1,64 @@
+/* --- Desktop Icons --- */
+.desktop-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-height: calc(100vh - var(--taskbar-h) - 40px);
+    z-index: 10;
+}
+
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 80px;
+    padding: 8px 4px;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: default;
+    user-select: none;
+    outline: none;
+    transition: background 0.1s;
+}
+
+.desktop-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.desktop-icon:focus {
+    background: rgba(0, 0, 128, 0.5);
+    border: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+.desktop-icon-image-wrapper {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-icon-label {
+    font-family: var(--font-system);
+    font-size: 11px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    word-break: break-word;
+    line-height: 1.2;
+    padding: 2px 4px;
+    border: 1px solid transparent;
+}
+
+.desktop-icon:focus .desktop-icon-label {
+    background: #000080;
+    border-color: #ffffff;
+}

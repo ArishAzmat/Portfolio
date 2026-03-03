@@ -1,0 +1,88 @@
+/* --- Contact Section --- */
+.contact-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 8px;
+    font-family: var(--font-system);
+}
+
+.contact-header {
+    font-family: var(--font-retro);
+    font-size: 16px;
+    color: #000080;
+    border-bottom: 2px solid;
+    border-color: var(--win-border-dark) var(--win-border-light) var(--win-border-light) var(--win-border-dark);
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+.contact-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-field-grow {
+    flex: 1;
+    align-items: flex-start;
+}
+
+.contact-label {
+    font-size: 12px;
+    white-space: nowrap;
+    width: 130px;
+    flex-shrink: 0;
+    text-align: right;
+    color: #000000;
+}
+
+.contact-textarea {
+    resize: none;
+    flex: 1;
+    height: 100%;
+    min-height: 60px;
+    font-family: var(--font-system);
+}
+
+.contact-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding-top: 4px;
+    border-top: 1px solid var(--win-border-dark);
+}
+
+.contact-send-btn {
+    background: #d0d8f0;
+    font-weight: bold;
+}
+
+/* Sent confirmation */
+.contact-sent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 12px;
+    text-align: center;
+}
+
+.contact-sent-icon {
+    font-size: 40px;
+}
+
+.contact-sent-title {
+    font-family: var(--font-pixel);
+    font-size: 11px;
+    color: #000080;
+}
+
+.contact-sent-body {
+    font-family: var(--font-system);
+    font-size: 12px;
+    line-height: 1.6;
+    color: #000000;
+    max-width: 260px;
+}
